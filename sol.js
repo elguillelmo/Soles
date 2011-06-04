@@ -72,7 +72,13 @@
         // x,y point in the screen's coordinate system
         // 
         ctx.fillStyle = "white"
-        ctx.fillRect(0,0, canvas.width, canvas.height)        
+        ctx.fillRect(0,0, canvas.width, canvas.height)
+        
+        var title = "Grupos de Trabajo #AcampadaSol"
+        ctx.font = "bold 20px Arial"
+        ctx.textAlign = "left"
+        ctx.fillStyle = "#151515"
+        ctx.fillText(title||"", 20, 20)
         
         sys.eachEdge(function(edge, pt1, pt2){
           // edge: {source:Node, target:Node, length:#, data:{}}
