@@ -1,4 +1,12 @@
-#
+# Listado de grupos de trabajo. A partir de aqui se genera,
+# automáticamente, el archivo json que lee sol.js.
+# To generate the json file, use generate_json.py.
+# The format of this file is:
+# each line is a section or subsection; section names start
+# with a star '*', subsection names start with two stars,
+# '**'. URLs to be linked to can appear after a tab.
+# Lines starting with # are ignored (comments).
+# The order of sections / subsections matters.
 *Educación y Universidad	http://grupotrabajoeducacion.tk/
 **Educación de 0 a 18 años
 **Formación Profesional

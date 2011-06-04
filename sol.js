@@ -261,7 +261,7 @@
     sys.parameters({stiffness:1000, repulsion:10000, gravity:true, dt:0.015, friction:0.99})
     sys.renderer = Renderer("#viewport") // our newly created renderer will have its .init() method called shortly by sys...
     
-    var thegraph = $.getJSON("data/comisiones.json", function(data) {
+    var thegraph = $.getJSON("grupos.json", function(data) {
       $.each(data.nodes, function(key, val) {
         sys.addNode(key, val)
         });
