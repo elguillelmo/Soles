@@ -5,16 +5,18 @@
 # each line is a section or subsection; section names start
 # with a star '*', subsection names start with two stars,
 # '**'. URLs to be linked to can appear after a tab.
+# In section names, a single linebreak is allowed. A line-break is marked
+# with a pipe: |
 # Lines starting with # are ignored (comments).
 # The order of sections / subsections matters.
-*Educación	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/educacion/
+*Educación| y Universidad	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/educacion/
 **Educación de 0 a 18 años
 **Formación Profesional
 **Educación Especial
 **Educación no formal
 **Universidades
 #
-*Ciencia y Tecnología
+*Ciencia|y Tecnología
 #
 *Cultura	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_cultura/
 **Pensamiento Cultural
@@ -26,7 +28,7 @@
 *Feminismos	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_feminismos/
 **Transmaribollo
 #
-*Medio Ambiente	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/
+*Medio|Ambiente	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/
 **Acción Ambiental	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_accion-ambiental/
 **Soberanía alimentaria	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_soberania-alimentaria/
 **Medio Marino	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_medio-marino-y-litoral/
@@ -39,7 +41,7 @@
 **Ciudades	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_ciudades/
 **Soberanía Alimentaria	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_soberania-alimentaria/
 #
-*Diálogo entre Religiones
+*Diálogo entre|Religiones
 #
 *Economía	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_economia/
 **Empleo
@@ -50,7 +52,7 @@
 **Sistemas financieros Internacionales	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_economia/sg_sistemas-financieros/
 **Relaciones económicas globales
 #
-*Migración y Movilidad
+*Migración|y Movilidad
 #
 *Social
 **Vivienda

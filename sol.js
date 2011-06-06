@@ -106,8 +106,25 @@
         
           if (node.data.shape=='dot'){
             gfx.oval(pt.x-w/2, pt.y-w/2, w, w, {fill:node.data.color, alpha:node.data.alpha})
-            gfx.text(label, pt.x, pt.y+7, {alpha:node.data.alpha, color:text_color, align:"center", font:"Arial", size:13})
-            gfx.text(label, pt.x, pt.y+7, {alpha:node.data.alpha, color:text_color, align:"center", font:"Arial", size:13})
+            // Split the text lable in (the first) '\n':
+            var splitted = label.split("|", 2);
+            if (splitted.length > 1) {
+              var labeltop = splitted[0]
+              var labelbottom = splitted[1].replace(/|/,' ')
+              gfx.text(labeltop, pt.x, pt.y-0.5, {alpha:node.data.alpha, 
+                                             color:text_color, align:"center",
+                                             font:"Arial", size:13})
+              gfx.text(labelbottom, pt.x, pt.y+13.5, {alpha:node.data.alpha, color:text_color,
+                                             align:"center", font:"Arial", size:13})
+              gfx.text(labeltop, pt.x, pt.y-0.5, {alpha:node.data.alpha, 
+                                             color:text_color, align:"center",
+                                             font:"Arial", size:13})
+              gfx.text(labelbottom, pt.x, pt.y+13.5, {alpha:node.data.alpha, color:text_color,
+                                             align:"center", font:"Arial", size:13})
+            } else {
+              gfx.text(label, pt.x, pt.y+7, {alpha:node.data.alpha, color:text_color, align:"center", font:"Arial", size:13})
+              gfx.text(label, pt.x, pt.y+7, {alpha:node.data.alpha, color:text_color, align:"center", font:"Arial", size:13})
+            }
           }else{
             var w = Math.max(20, 20+gfx.textWidth(label) )
             gfx.rect(pt.x-w/2, pt.y-8, w, 20, 4, {fill:node.data.color, alpha:node.data.alpha})
