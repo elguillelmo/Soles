@@ -7,7 +7,7 @@
 # '**'. URLs to be linked to can appear after a tab.
 # Lines starting with # are ignored (comments).
 # The order of sections / subsections matters.
-*Educación y Universidad	http://grupotrabajoeducacion.tk/
+*Educación	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/educacion/
 **Educación de 0 a 18 años
 **Formación Profesional
 **Educación Especial
@@ -16,36 +16,38 @@
 #
 *Ciencia y Tecnología
 #
-*Cultura	http://grupotrabajoeducacion.tk/
+*Cultura	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_cultura/
 **Pensamiento Cultural
 **Patrimonio cultural
 **Educación cultural
 **Gestión Cultural
 **Música	http://twitter.com/solsostenidoinf
 #
-*Feminismos
+*Feminismos	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_feminismos/
 **Transmaribollo
 #
-*Medio Ambiente
-**Logística
-**Acción Ambiental
-**Soberanía alimentaria
-**Medio Marino
-**Biodiversidad
-**Energías
-**Decrecimiento
-**Medio Rural
-**Ciudades
+*Medio Ambiente	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/
+**Acción Ambiental	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_accion-ambiental/
+**Soberanía alimentaria	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_soberania-alimentaria/
+**Medio Marino	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_medio-marino-y-litoral/
+**Biodiversidad	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_biodiversidad-y-espacios-naturales/
+**Energía	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_energia/
+**Educación Ambiental	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_educacion-ambiental/
+**Decrecimiento	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_decrecimiento/
+**Legislación	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_legislacion-y-normativa-ambiental
+**Medio Rural	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_medio-rural-y-ordenacion-del-territorio/
+**Ciudades	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_ciudades/
+**Soberanía Alimentaria	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_soberania-alimentaria/
 #
 *Diálogo entre Religiones
 #
-*Economía
+*Economía	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_economia/
 **Empleo
 **Vivienda
 **Empresas
 **Política económica
 **Países Empobrecidos
-**Sistemas financieros Internacionales
+**Sistemas financieros Internacionales	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_economia/sg_sistemas-financieros/
 **Relaciones económicas globales
 #
 *Migración y Movilidad
@@ -58,6 +60,6 @@
 **Intervención social
 **Cooperación al desarrollo
 #
-*Política
-**Corto plazo
-**Largo plazo
+*Política	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_politica/
+**Corto plazo	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_politica/corto-plazo/
+**Largo plazo	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_politica/largo-plazo/

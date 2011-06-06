@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
 '''
 Created on 01/06/2011
-@author: Guillermo Garrido (elguillelmo@gmail.com)
+@author: Guillermo Garrido
 Requires Python >= 2.7.*
 '''
-# Copyright Guillermo Garrido 2011.
-# This program is free software; you can redistribute it and/or
-# modify it under the terms of the GNU Lesser General Public
-# License as published by the Free Software Foundation; either
-# version 2.1 of the License, or (at your option) any later version.
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 #
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# Lesser General Public License for more details.
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 #
-# You can receive a copy of the GNU Lesser General Public License from 
-# http://www.gnu.org/
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 import sys
 import getopt
 import json
@@ -24,9 +24,9 @@ from collections import OrderedDict
 import math
 
 ROOT = "#AcampadaSol"
-ROOT_NODE = {"color":"orange", "shape":"dot", "alpha":1, "mass":100}
-SEC_NODE = {"color":"lightblue", "shape":"dot", "alpha":1, "radius":60, "mass":10}
-SUBSEC_NODE = {"color":"lightgreen", "alpha":0, "mass":1}
+ROOT_NODE = {"color":"#f5d527", "shape":"dot", "alpha":1, "mass":100}
+SEC_NODE = {"color":"#7e8db7", "shape":"dot", "alpha":1, "radius":60, "mass":10}
+SUBSEC_NODE = {"color":"#dfdfdf", "alpha":0, "mass":1}
 SEC_EDGE = {"length":.8}
 SUBSEC_EDGE = {"length":1}
 
@@ -88,7 +88,6 @@ def main(args):
   sections = []
   
   for line in input:
-    print line
     # Skip comments.
     if line.startswith('#'): continue
     if line[0:2] == '**':
@@ -101,7 +100,6 @@ def main(args):
           if len(parts) > 1:
             url = parts[1]
             graph["nodes"][subsection]["link"] = url
-            print graph["nodes"][subsection]["link"]
           if section in graph["edges"]:
             graph["edges"][section][subsection] = SUBSEC_EDGE.copy()
           else:
@@ -115,7 +113,6 @@ def main(args):
         sections.append(section)
         if len(parts) > 1:
             url = parts[1]
-            print url
             graph["nodes"][section]["link"] = url
         graph["edges"][ROOT][section] = SEC_EDGE.copy()
     else:
@@ -132,6 +129,10 @@ def main(args):
   input.close()
   if output_file is not None:
     output.close()
+
+  print >>sys.stdout, "%s:\n\tProcessed %s. Output %s" % (sys.argv[0],
+                                                          input_file,
+                                                          output_file)
 
 if __name__ == "__main__":
   ''' Generates a json file for the arbor graph library from a simple

@@ -3,22 +3,22 @@
 //
 //  A graph visualization using arbor.js.
 //
-//     This program is free software; you can redistribute it and/or
-//     modify it under the terms of the GNU Lesser General Public
-//     License as published by the Free Software Foundation; either
-//     version 2.1 of the License, or (at your option) any later version.
-// 
-//     This program is distributed in the hope that it will be useful,
-//     but WITHOUT ANY WARRANTY; without even the implied warranty of
-//     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//     Lesser General Public License for more details.
-// 
-//     You can receive a copy of the GNU Lesser General Public License from 
-//     http://www.gnu.org/
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 //  This program contains code and uses the library arbor.js, by
 //  Samizdat Drafting Co., a graph visualization library using web workers
-//  and jQuery, released under the Arbor is released under the MIT license:
+//  and jQuery, released under the MIT license:
 //  http://en.wikipedia.org/wiki/MIT_License
 
 (function($){
@@ -74,7 +74,7 @@
         ctx.fillStyle = "white"
         ctx.fillRect(0,0, canvas.width, canvas.height)
         
-        var title = "Grupos de Trabajo #AcampadaSol"
+        var title = "Grupos de Trabajo"
         ctx.font = "bold 20px Arial"
         ctx.textAlign = "left"
         ctx.fillStyle = "#151515"
@@ -120,7 +120,7 @@
       
       switchSection:function(newSection){
         // Max alpha for leaf nodes.
-        var transp = 0.7
+        var transp = 0.8
         var duration = 0.5
         if (!sys.getEdgesFrom(newSection)[0]) {
           newSection = "#AcampadaSol"
@@ -261,7 +261,7 @@
     sys.parameters({stiffness:1000, repulsion:10000, gravity:true, dt:0.015, friction:0.99})
     sys.renderer = Renderer("#viewport") // our newly created renderer will have its .init() method called shortly by sys...
     
-    var thegraph = $.getJSON("grupos.json", function(data) {
+    var thegraph = $.getJSON("./data/grupos.json", function(data) {
       $.each(data.nodes, function(key, val) {
         sys.addNode(key, val)
         });
