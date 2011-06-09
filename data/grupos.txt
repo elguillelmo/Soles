@@ -10,23 +10,23 @@
 # Lines starting with # are ignored (comments).
 # The order of sections / subsections matters.
 *Educación| y Universidad	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/educacion/
-**Educación de 0 a 18 años
-**Formación Profesional
-**Educación Especial
-**Educación no formal
-**Universidades
+**Educación de 0 a 18 años	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/educacion/sg_educacion-de-0-a-18
+**Formación Profesional	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/educacion/sg_formacion-profesional/
+**Educación Especial	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/educacion/sg_educacion-especial/
+**Educación no formal	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/educacion/sg_educacion-no-formal/
+**Universidades	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/educacion/sg_universidad/
 #
-*Ciencia|y Tecnología
+*Ciencia|y Tecnología	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_ciencia-y-tecnologia/
 #
 *Cultura	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_cultura/
-**Pensamiento Cultural
-**Patrimonio cultural
-**Educación cultural
-**Gestión Cultural
-**Música	http://twitter.com/solsostenidoinf
+**Pensamiento Cultural	"http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_cultura/sg_pensamiento-cultural/
+**Patrimonio cultural	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_cultura/sg_patrimonio-cultural/
+**Educación cultural	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_cultura/sg_educacion-cultural/
+**Gestión Cultural	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_cultura/sg_gestion-cultural/
+**Música	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_cultura/sg_musica/
 #
 *Feminismos	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_feminismos/
-**Transmaribollo
+# **Transmaribollo
 #
 *Medio|Ambiente	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/
 **Acción Ambiental	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_accion-ambiental/
@@ -41,26 +41,26 @@
 **Ciudades	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_ciudades/
 **Soberanía Alimentaria	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_medioambiente/sg_soberania-alimentaria/
 #
-*Diálogo entre|Religiones
+*Diálogo entre|Religiones	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_dialog-entre-religiones/
 #
 *Economía	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_economia/
-**Empleo
-**Vivienda
-**Empresas
-**Política económica
-**Países Empobrecidos
+**Empleo	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_economia/sg_empleo/
+**Vivienda	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_economia/sg_vivienda/
+**Empresas	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_economia/sg_empresas/
+**Política económica	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_economia/sg_politica-economica/
+**Países Empobrecidos	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_economia/sg_paises-empobrecidos/
 **Sistemas financieros Internacionales	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_economia/sg_sistemas-financieros/
-**Relaciones económicas globales
+**Relaciones económicas globales	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_economia/sg_relaciones-economicas-globales/
 #
-*Migración|y Movilidad
+*Migración|y Movilidad	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_migracion-y-movilidad/
 #
-*Social
-**Vivienda
-**Espacios comunitarios
-**Penintenciarías
-**Menores
-**Intervención social
-**Cooperación al desarrollo
+*Social	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_social/
+**Vivienda Social	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_social/sg_vivienda-g_social/
+**Espacios comunitarios	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_social/sg_espacios-comunitarios/
+**Penintenciarías	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_social/sg_penintenciarias/
+**Menores	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_social/sg_menores/
+**Intervención social	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_social/sg_intervencion-social/
+**Cooperación al desarrollo	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_social/sg_cooperacion-al-desarrollo/
 #
 *Política	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_politica/
 **Corto plazo	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_politica/corto-plazo/

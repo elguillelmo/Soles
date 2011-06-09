@@ -29,6 +29,13 @@
     var gfx = arbor.Graphics(canvas)
     var sys = null
     
+    var Moving = {FROZEN : -1,
+                  PAUSED : 0,
+                  ON : 1
+    }
+    
+    var move = Moving.ON
+    
     var selected = null,
         nearest = null,
         _mouseP = null;
@@ -52,6 +59,7 @@
         that.resize()
         // set up some event handlers to allow for node-dragging
         that.initMouseHandling()
+        that.initKeyboardHandling()
       },
  
       resize:function(){
@@ -62,6 +70,10 @@
       },
       
       redraw:function(){
+        
+        if (move == Moving.FROZEN) {
+          return
+        }
         // 
         // redraw will be called repeatedly during the run whenever the node positions
         // change. the new positions for the nodes can be accessed by looking at the
@@ -176,6 +188,39 @@
         })
       },
  
+      initKeyboardHandling:function(){
+        
+        var handler = {
+         
+          keystroked:function(e){
+            if (typeof KeyEvent == 'undefined') {
+              var KeyEvent = { DOM_VK_RETURN : 13,
+                               DOM_VK_ENTER : 14,
+                               DOM_VK_SPACE : 32,
+                               DOM_VK_ESCAPE: 27
+              }
+            }
+            var code = e.keyCode;
+            if (code == KeyEvent.DOM_VK_ENTER || code == KeyEvent.DOM_VK_SPACE
+                || code == KeyEvent.DOM_VK_RETURN || code == KeyEvent.DOM_VK_ESCAPE) {
+              if (move == Moving.FROZEN) {
+                sys.start()
+                move = Moving.ON;
+              } else if (move == Moving.PAUSE) {
+                move = Moving.FROZEN;
+              } else if (move == Moving.ON) {
+                move = Moving.PAUSE
+                sys.stop()
+              }
+              
+            }
+          
+          }
+          
+        }
+        $(window).keydown(handler.keystroked);
+      },
+ 
       
       initMouseHandling:function(){
         // no-nonsense drag and drop (thanks springy.js)
@@ -189,7 +234,7 @@
         // set up a handler object that will initially listen for mousedowns then
         // for moves and mouseups while dragging
         var handler = {
-          moved:function(e){
+          moved:function(e){           
             var pos = $(canvas).offset();
             _mouseP = arbor.Point(e.pageX-pos.left, e.pageY-pos.top)
             nearest = sys.nearest(_mouseP);
@@ -275,7 +320,7 @@
     var sys = arbor.ParticleSystem();
     // create the system with sensible repulsion/stiffness/friction
     // use center-gravity to make the graph settle nicely (ymmv)
-    sys.parameters({stiffness:1000, repulsion:10000, gravity:true, dt:0.015, friction:0.99})
+    sys.parameters({stiffness:1000, repulsion:10000, gravity:true, dt:0.010, friction:0.9})
     sys.renderer = Renderer("#viewport") // our newly created renderer will have its .init() method called shortly by sys...
     
     var thegraph = $.getJSON("./data/grupos.json", function(data) {
