@@ -9,6 +9,9 @@
 # with a pipe: |
 # Lines starting with # are ignored (comments).
 # The order of sections / subsections matters.
+#
+*Pensamiento	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/pensamiento/
+#
 *Educación| y Universidad	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/educacion/
 **Educación de 0 a 18 años	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/educacion/sg_educacion-de-0-a-18
 **Formación Profesional	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/educacion/sg_formacion-profesional/
@@ -65,3 +68,5 @@
 *Política	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_politica/
 **Corto plazo	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_politica/corto-plazo/
 **Largo plazo	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_politica/largo-plazo/
+#
+*Derechos|Animales	http://madrid.tomalaplaza.net/category/grupos-de-trabajo/g_derechos-animales/

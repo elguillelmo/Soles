@@ -39,6 +39,10 @@
     var selected = null,
         nearest = null,
         _mouseP = null;
+        
+    var soles_radius = 50
+    var soles_txtsize = 12
+    var satelites_txtsize = 10
 
     var that = {
       init:function(system){
@@ -111,7 +115,7 @@
           // pt:   {x:#, y:#}  node position in screen coords
           if (node.data.alpha===0) return
           // draw an ellipse centered at pt
-          var w = node.data.radius ? node.data.radius : 60
+          var w = node.data.radius ? node.data.radius : soles_radius
 
           var label = node.name
           var text_color = node.data.link ? "#3133C0" : "#3C3C3C"
@@ -125,23 +129,23 @@
               var labelbottom = splitted[1].replace(/|/,' ')
               gfx.text(labeltop, pt.x, pt.y-0.5, {alpha:node.data.alpha, 
                                              color:text_color, align:"center",
-                                             font:"Arial", size:13})
+                                             font:"Arial", size:soles_txtsize})
               gfx.text(labelbottom, pt.x, pt.y+13.5, {alpha:node.data.alpha, color:text_color,
-                                             align:"center", font:"Arial", size:13})
+                                             align:"center", font:"Arial", size:soles_txtsize})
               gfx.text(labeltop, pt.x, pt.y-0.5, {alpha:node.data.alpha, 
                                              color:text_color, align:"center",
-                                             font:"Arial", size:13})
+                                             font:"Arial", size:soles_txtsize})
               gfx.text(labelbottom, pt.x, pt.y+13.5, {alpha:node.data.alpha, color:text_color,
-                                             align:"center", font:"Arial", size:13})
+                                             align:"center", font:"Arial", size:soles_txtsize})
             } else {
-              gfx.text(label, pt.x, pt.y+7, {alpha:node.data.alpha, color:text_color, align:"center", font:"Arial", size:13})
-              gfx.text(label, pt.x, pt.y+7, {alpha:node.data.alpha, color:text_color, align:"center", font:"Arial", size:13})
+              gfx.text(label, pt.x, pt.y+7, {alpha:node.data.alpha, color:text_color, align:"center", font:"Arial", size:soles_txtsize})
+              gfx.text(label, pt.x, pt.y+7, {alpha:node.data.alpha, color:text_color, align:"center", font:"Arial", size:soles_txtsize})
             }
           }else{
             var w = Math.max(20, 20+gfx.textWidth(label) )
             gfx.rect(pt.x-w/2, pt.y-8, w, 20, 4, {fill:node.data.color, alpha:node.data.alpha})
-            gfx.text(label, pt.x, pt.y+9, {alpha:node.data.alpha, color:text_color, align:"center", font:"Arial", size:12})
-            gfx.text(label, pt.x, pt.y+9, {alpha:node.data.alpha, color:text_color, align:"center", font:"Arial", size:12})
+            gfx.text(label, pt.x, pt.y+9, {alpha:node.data.alpha, color:text_color, align:"center", font:"Arial", size:satelites_txtsize})
+            gfx.text(label, pt.x, pt.y+9, {alpha:node.data.alpha, color:text_color, align:"center", font:"Arial", size:satelites_txtsize})
           }
         })
 
